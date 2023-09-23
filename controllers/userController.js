@@ -2,6 +2,7 @@
 const connection = require("../database/connection");
 const jwt = require("jsonwebtoken");
 const nodeMailer = require("nodemailer");
+
 const signUp = (req, res) => {
   const user = req.body;
   console.log(user);
