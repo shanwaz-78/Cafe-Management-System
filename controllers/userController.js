@@ -31,7 +31,7 @@ const signUp = (req, res) => {
           }
         );
       } else {
-         res.status(200).send({ message: `User Already Exists` });
+         res.status(409).send({ message: `User Already Exists` });
       }
     }
   });
